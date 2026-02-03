@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify, render_template
-import util
+from . import util
 import os
 
 
@@ -37,4 +37,5 @@ def predict_home_price():
     })
 if __name__ == "__main__":
     print("Starting Flask server...")
+
     app.run(debug=True)
